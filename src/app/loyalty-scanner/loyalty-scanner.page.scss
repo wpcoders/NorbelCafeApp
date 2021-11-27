@@ -1,0 +1,71 @@
+.reservation-title-box {
+    --background: #940a0a; 
+}
+
+.reservation-title-box ion-label {   
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color:#fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.loyalty-scanner-bg{
+    --background: #8f5d46; 
+}
+
+.click-scan-code h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 46px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.code-manually{
+    // position: absolute;   
+    // bottom: 0;
+    // left: 0;
+    // text-align: center;
+    // right: 0;
+}
+.code-manually p{
+    text-align: center;
+    font-size: 16px;
+    color: #fff;    
+
+}
+
+.stamps-button {
+    text-align: center;
+    margin-top: 10px;
+}
+.stamps-button button{
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    max-width: 270px;
+    min-height: 110px;
+    width: 100%;
+}
+
+.stamps-button button span {
+    font-size: 46px;
+    display: block;
+    font-weight: 700;
+}
+.click-here-text{
+    background-color: #8f5d46;
+    box-shadow: unset !important;
+    border: none !important;
+}
+.footer-md::before{
+    display: none;
+}

@@ -1,0 +1,64 @@
+<ion-header class="norbel-header">
+  <ion-toolbar>
+    <ion-title>Norbel</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu-icon-2"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="none" class="page-title-box  ion-no-padding" style="--inner-padding-end: 0 !important;">
+    <ion-label>
+      Reservations
+    </ion-label>
+  </ion-item>
+
+  <div class="page-pad-box ">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <h4 class="reservations-day">Today </h4>
+        </ion-col>
+        <ion-col size="6" class="booking-success-box" *ngFor="let item of todayData">
+          <ion-label>{{item.user_name}} </ion-label>
+          <ion-label>{{item.number_of_people}} People </ion-label>
+          <ion-label>{{item.booking_time}} </ion-label>
+          <ion-button expand="block" class="cancel-btn" (click)="doCancleBooking(item.user_id)">Cancel</ion-button>
+        </ion-col>
+
+        <div *ngIf="todayData == ''">
+          <ion-col size="12" class="booking-success-box">
+            <ion-label>No bookings yet</ion-label>
+          </ion-col>
+        </div>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <h4 class="reservations-day">Tomorrow</h4>
+        </ion-col>
+
+        <ion-col size="6" class="booking-success-box" *ngFor="let item of tomorrowData">
+          <ion-label>{{item.user_name}} </ion-label>
+          <ion-label>{{item.number_of_people}} People </ion-label>
+          <ion-label>{{item.booking_time}} </ion-label>
+          <ion-button expand="block" class="cancel-btn" (click)="doCancleBooking(item.user_id)">Cancel</ion-button>
+        </ion-col>
+        <div *ngIf="tomorrowData == ''">
+          <ion-col size="12" class="booking-success-box">
+            <ion-label>No bookings yet</ion-label>
+          </ion-col>
+        </div>
+      </ion-row>
+    </ion-grid>
+
+
+
+
+
+
+
+  </div>
+</ion-content>

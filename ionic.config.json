@@ -1,0 +1,7 @@
+{
+  "name": "NorbelCafeApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
